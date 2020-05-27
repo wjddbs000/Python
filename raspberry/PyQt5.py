@@ -1,8 +1,8 @@
 import sys
-from PyQt5.QtWidgets import QMenuBar,QApplication,QWidget,QAction, QMainWindow ,QPushButton
+from PyQt5.QWidgets import QMessageBox, QMenuBar, QApplication, QWidget, QAction, QMainWindow, QPushButton
+# from PyQt5.QWidgets import QMessageBox, QMenuBar, QApplication, QWidget, QAction, QMainWindow, QPushButton
 from PyQt5.QtGui import QIcon
-from PyQt5.QtCore import QCoreApplication 
-
+# from PyQt5.QtCore import QCoreApplication 
 
 class MyApp(QWidget):
 
@@ -17,7 +17,7 @@ class MyApp(QWidget):
         exitAction.triggered.connect(self.btn_clicked)
 
         menubar=self.menubar()
-        menubar.setNativeMenuBar(False)
+        #menubar.setNativeMenuBar(False)
         filemenu = menubar.addMenu('&File')
         filemenu.addAction(exitAction)
 
